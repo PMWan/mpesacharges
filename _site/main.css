@@ -36,8 +36,10 @@ footer {
     text-align: center;
     padding: 5% 0%;
     font-style: italic;
+    color: gray;
 }
 
 #lastupdated {
     font-style: italic;
+    color: gray;
 }
