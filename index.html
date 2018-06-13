@@ -34,56 +34,47 @@
     <h2>Send to Unregistered User</h2>
     <table>
         <tr>
-            <th>Fruit</th>
-            <th>Size</th>
-            <th>Color</th>
+            <th>Min (KSh)</th>
+            <th>Max (KSh)</th>
+            <th>M-PESA Charges</th>
         </tr>
-        <tr>
-            <td>Fruit</td>
-            <td>Size</td>
-            <td>Color</td>
-        </tr>
-        <tr>
-            <td>Fruit</td>
-            <td>Size</td>
-            <td>Color</td>
-        </tr>
+        {% for sendunregcharge in site.data.sendunregcharges %}
+            <tr>
+                <td>{{ sendunregcharge.min }}</td>
+                <td>{{ sendunregcharge.max }}</td>
+                <td>{{ sendunregcharge.charge }}</td>
+            </tr>
+        {% endfor %}
     </table>
     <h2>Withdraw from Agent</h2>
     <table>
         <tr>
-            <th>Fruit</th>
-            <th>Size</th>
-            <th>Color</th>
+            <th>Min (KSh)</th>
+            <th>Max (KSh)</th>
+            <th>M-PESA Charges</th>
         </tr>
-        <tr>
-            <td>Fruit</td>
-            <td>Size</td>
-            <td>Color</td>
-        </tr>
-        <tr>
-            <td>Fruit</td>
-            <td>Size</td>
-            <td>Color</td>
-        </tr>
+        {% for withdrawagentcharge in site.data.withdrawagentcharges %}
+            <tr>
+                <td>{{ withdrawagentcharge.min }}</td>
+                <td>{{ withdrawagentcharge.max }}</td>
+                <td>{{ withdrawagentcharge.charge }}</td>
+            </tr>
+        {% endfor %}
     </table>
     <h2>Withdraw from ATM</h2>
     <table>
         <tr>
-            <th>Fruit</th>
-            <th>Size</th>
-            <th>Color</th>
+            <th>Min (KSh)</th>
+            <th>Max (KSh)</th>
+            <th>M-PESA Charges</th>
         </tr>
-        <tr>
-            <td>Fruit</td>
-            <td>Size</td>
-            <td>Color</td>
-        </tr>
-        <tr>
-            <td>Fruit</td>
-            <td>Size</td>
-            <td>Color</td>
-        </tr>
+        {% for withdrawatmcharge in site.data.withdrawatmcharges %}
+            <tr>
+                <td>{{ withdrawatmcharge.min }}</td>
+                <td>{{ withdrawatmcharge.max }}</td>
+                <td>{{ withdrawatmcharge.charge }}</td>
+            </tr>
+        {% endfor %}
     </table>
     <footer>
         <p>For KE.</p>
