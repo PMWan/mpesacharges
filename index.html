@@ -1,3 +1,7 @@
+---
+#this is empty front matter
+---
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +23,7 @@
             <th>Max (KSh)</th>
             <th>M-PESA Charges</th>
         </tr>
-        {% for member in site.data.sendregcharges %}
+        {% for sendregcharge in site.data.sendregcharges %}
             <tr>
                 <td>{{ sendregcharge.min }}</td>
                 <td>{{ sendregcharge.max }}</td>
