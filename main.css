@@ -6,6 +6,13 @@ body {
     color: #333;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 0% 0%;
+    } 
+}
+
 h2 {
     margin-bottom: 0.5em;
     margin-top: 1.5em;
